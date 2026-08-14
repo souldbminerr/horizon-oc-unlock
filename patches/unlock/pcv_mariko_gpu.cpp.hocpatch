@@ -1,0 +1,29 @@
+FILE: Source/Atmosphere/stratosphere/loader/source/oc/pcv/mariko/pcv_mariko_gpu.cpp
+
+## GpuVoltThermals: patch marikoGpuVmax into the same 6 thermal-zone offsets already used for marikoGpuVmin, so the new GPU Maximum Voltage setting actually takes effect
+<<<<<<< SEARCH
+        if (C.marikoGpuVmin) {
+            PATCH_OFFSET(ptr,      C.marikoGpuVmin);
+            PATCH_OFFSET(ptr +  3, C.marikoGpuVmin);
+            PATCH_OFFSET(ptr +  6, C.marikoGpuVmin);
+            PATCH_OFFSET(ptr +  9, C.marikoGpuVmin);
+            PATCH_OFFSET(ptr + 12, C.marikoGpuVmin);
+        }
+=======
+        if (C.marikoGpuVmin) {
+            PATCH_OFFSET(ptr,      C.marikoGpuVmin);
+            PATCH_OFFSET(ptr +  3, C.marikoGpuVmin);
+            PATCH_OFFSET(ptr +  6, C.marikoGpuVmin);
+            PATCH_OFFSET(ptr +  9, C.marikoGpuVmin);
+            PATCH_OFFSET(ptr + 12, C.marikoGpuVmin);
+        }
+
+        if (C.marikoGpuVmax) {
+            PATCH_OFFSET(ptr -  2, C.marikoGpuVmax);
+            PATCH_OFFSET(ptr +  1, C.marikoGpuVmax);
+            PATCH_OFFSET(ptr +  4, C.marikoGpuVmax);
+            PATCH_OFFSET(ptr +  7, C.marikoGpuVmax);
+            PATCH_OFFSET(ptr + 10, C.marikoGpuVmax);
+            PATCH_OFFSET(ptr + 13, C.marikoGpuVmax);
+        }
+>>>>>>> REPLACE
