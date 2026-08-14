@@ -1,0 +1,12 @@
+FILE: Source/hoc-clk/overlay/src/ui/gui/base_gui.cpp
+
+## rename the overlay build codename shown in the corner from "Athena" to "CatTest"
+<<<<<<< SEARCH
+    static const std::string versionStr = "Version " + getVersionString() + "  \"Athena (debug)\"";
+    #else
+    static const std::string versionStr = "Version " + getVersionString() + "  \"Athena\"";
+=======
+    static const std::string versionStr = "Version " + getVersionString() + "  \"CatTest (debug)\"";
+    #else
+    static const std::string versionStr = "Version " + getVersionString() + "  \"CatTest\"";
+>>>>>>> REPLACE

@@ -1,0 +1,10 @@
+FILE: Source/Atmosphere/stratosphere/loader/source/oc/customize.hpp
+
+## widen GPU volt array declarations to match the restructured customize.cpp tables (erista went sparse+extended to 24 entries, mariko extended to 30)
+<<<<<<< SEARCH
+    u32 eristaGpuVoltArray[27];
+    u32 marikoGpuVoltArray[24];
+=======
+    u32 eristaGpuVoltArray[24];
+    u32 marikoGpuVoltArray[30];
+>>>>>>> REPLACE

@@ -1,0 +1,8 @@
+FILE: Source/Atmosphere/stratosphere/loader/source/oc/pcv/mariko/pcv_mariko_cpu.hpp
+
+## CapCpuClock() snaps marikoCpuMaxClock down to the nearest entry <= it in this whitelist. Left at the old 2703MHz ceiling, it silently capped the new 2805/2907MHz options back down to 2703 -- add the new entries so they actually take effect.
+<<<<<<< SEARCH
+    static const u32 allowedCpuMaxFrequencies[] = { 1'963'500, 2'091'000, 2'193'000, 2'295'000, 2'397'000, 2'499'000, 2'601'000, 2'703'000, };
+=======
+    static const u32 allowedCpuMaxFrequencies[] = { 1'963'500, 2'091'000, 2'193'000, 2'295'000, 2'397'000, 2'499'000, 2'601'000, 2'703'000, 2'805'000, 2'907'000, };
+>>>>>>> REPLACE

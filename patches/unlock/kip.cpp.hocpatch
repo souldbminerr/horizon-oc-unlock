@@ -1,0 +1,39 @@
+FILE: Source/hoc-clk/sysmodule/src/file/kip.cpp
+
+## config -> table write: loop bounds must swap with the array size swap (mariko 24->30, erista 27->24)
+<<<<<<< SEARCH
+        for (int i = 0; i < 24; i++) {
+            table.marikoGpuVoltArray[i] = config::GetConfigValue((HocClkConfigValue)(KipConfigValue_g_volt_76800 + i));
+        }
+
+        for (int i = 0; i < 27; i++) {
+            table.eristaGpuVoltArray[i] = config::GetConfigValue((HocClkConfigValue)(KipConfigValue_g_volt_e_76800 + i));
+        }
+=======
+        for (int i = 0; i < 30; i++) {
+            table.marikoGpuVoltArray[i] = config::GetConfigValue((HocClkConfigValue)(KipConfigValue_g_volt_76800 + i));
+        }
+
+        for (int i = 0; i < 24; i++) {
+            table.eristaGpuVoltArray[i] = config::GetConfigValue((HocClkConfigValue)(KipConfigValue_g_volt_e_76800 + i));
+        }
+>>>>>>> REPLACE
+
+## table -> config read: same loop bound swap
+<<<<<<< SEARCH
+        for (int i = 0; i < 24; i++) {
+            configValues.values[KipConfigValue_g_volt_76800 + i] = cust_get_mariko_gpu_volt(&table, i);
+        }
+
+        for (int i = 0; i < 27; i++) {
+            configValues.values[KipConfigValue_g_volt_e_76800 + i] = cust_get_erista_gpu_volt(&table, i);
+        }
+=======
+        for (int i = 0; i < 30; i++) {
+            configValues.values[KipConfigValue_g_volt_76800 + i] = cust_get_mariko_gpu_volt(&table, i);
+        }
+
+        for (int i = 0; i < 24; i++) {
+            configValues.values[KipConfigValue_g_volt_e_76800 + i] = cust_get_erista_gpu_volt(&table, i);
+        }
+>>>>>>> REPLACE

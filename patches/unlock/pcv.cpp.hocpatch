@@ -1,0 +1,15 @@
+FILE: Source/Atmosphere/stratosphere/loader/source/oc/pcv/pcv.cpp
+
+## marikoCpuDvfsMaxFreq validator ceiling was left at the old 2703MHz cap while marikoCpuDvfsTable's actual last entry was extended to 2907MHz -- would have panicked at boot. Raised to match marikoCpuBoostClock's ceiling.
+<<<<<<< SEARCH
+            { marikoCpuDvfsMaxFreq,  1785'000, 2703'000, panic::Cpu,      },
+=======
+            { marikoCpuDvfsMaxFreq,  1785'000, 3009'000, panic::Cpu,      },
+>>>>>>> REPLACE
+
+## marikoSocVmax validator ceiling: 1200mV -> 1300mV, matching the new SoC Max Volt UI option
+<<<<<<< SEARCH
+            { C.marikoSocVmax,           1000,     1200, panic::Emc,      },
+=======
+            { C.marikoSocVmax,           1000,     1300, panic::Emc,      },
+>>>>>>> REPLACE

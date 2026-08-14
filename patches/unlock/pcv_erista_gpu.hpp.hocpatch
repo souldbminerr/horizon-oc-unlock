@@ -1,0 +1,9 @@
+FILE: Source/Atmosphere/stratosphere/loader/source/oc/pcv/erista/pcv_erista_gpu.hpp
+
+## GpuFreqPllLimit's definition (pcv_erista_gpu.cpp) and its use in the erista patch table (pcv_erista.cpp) were uncommented as part of the unlock, but the declaration here was left commented out -- caused "not declared in this scope" at build time
+<<<<<<< SEARCH
+    // patch out 1305MHz limit on erista, don't use this!
+    // Result GpuFreqPllLimit(u32 *ptr);
+=======
+    Result GpuFreqPllLimit(u32 *ptr);
+>>>>>>> REPLACE
