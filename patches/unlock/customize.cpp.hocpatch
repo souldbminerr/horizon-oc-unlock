@@ -222,8 +222,8 @@ FILE: Source/Atmosphere/stratosphere/loader/source/oc/customize.cpp
 =======
     { 2601000, { 1702903, -36675, 113, }, { CPU_MAX_MAX_VOLT, } },
     { 2703000, { 1775375, -37515, 113, }, { CPU_MAX_MAX_VOLT, } },
-	{ 2805000, { 1908891, -37707, 113, }, { CPU_MAX_MAX_VOLT, } },
-	{ 2907000, { 1960388, -38395, 113, }, { CPU_MAX_MAX_VOLT, } },
+	{ 2805000, { 1787838, -35967, 113, }, { CPU_MAX_MAX_VOLT, } },
+	{ 2907000, { 1908891, -37707, 113, }, { CPU_MAX_MAX_VOLT, } },
 },
 
 .eristaGpuDvfsTable = {
