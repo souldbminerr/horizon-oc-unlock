@@ -1,0 +1,39 @@
+FILE: Source/Atmosphere/stratosphere/loader/source/oc/pcv/erista/pcv_erista_gpu.cpp
+
+<<<<<<< SEARCH
+        if (C.eristaGpuVmin) {
+            PATCH_OFFSET(ptr,      C.eristaGpuVmin);
+            PATCH_OFFSET(ptr + 3,  C.eristaGpuVmin);
+            PATCH_OFFSET(ptr + 6,  C.eristaGpuVmin);
+            PATCH_OFFSET(ptr + 9,  C.eristaGpuVmin);
+            PATCH_OFFSET(ptr + 12, C.eristaGpuVmin);
+        }
+=======
+        if (C.eristaGpuVmin) {
+            PATCH_OFFSET(ptr,      C.eristaGpuVmin);
+            PATCH_OFFSET(ptr + 3,  C.eristaGpuVmin);
+            PATCH_OFFSET(ptr + 6,  C.eristaGpuVmin);
+            PATCH_OFFSET(ptr + 9,  C.eristaGpuVmin);
+            PATCH_OFFSET(ptr + 12, C.eristaGpuVmin);
+        }
+
+        PATCH_OFFSET(ptr -  2, 1400);
+        PATCH_OFFSET(ptr +  1, 1400);
+        PATCH_OFFSET(ptr +  4, 1400);
+        PATCH_OFFSET(ptr +  7, 1400);
+        PATCH_OFFSET(ptr + 10, 1400);
+        PATCH_OFFSET(ptr + 13, 1400);
+>>>>>>> REPLACE
+
+## Uncap another vmax
+<<<<<<< SEARCH
+        if (C.eristaGpuVmin) {
+            PATCH_OFFSET(ptr, C.eristaGpuVmin);
+        }
+=======
+        if (C.eristaGpuVmin) {
+            PATCH_OFFSET(ptr, C.eristaGpuVmin);
+        }
+
+        PATCH_OFFSET(ptr + 1, 1400);
+>>>>>>> REPLACE

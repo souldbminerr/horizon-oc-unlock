@@ -1,0 +1,9 @@
+FILE: Source/Atmosphere/stratosphere/loader/source/oc/pcv/erista/pcv_erista.cpp
+
+## Patch PLL Limit
+<<<<<<< SEARCH
+            // {"GPU PLL Limit",  &GpuFreqPllLimit,        4, nullptr,  GpuClkPllLimit       },
+
+=======
+            {"GPU PLL Limit",  &GpuFreqPllLimit,        4, nullptr,  GpuClkPllLimit       },
+>>>>>>> REPLACE
